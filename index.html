@@ -1,25 +1,24 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stopwatch</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stopwatch App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="watch">
-            <div class="outer-circle">
-                <div class="inner-circle">
-                    <span class="text minute">01 :</span>
-                    <span class="text sec">&nbsp47 :</span>
-                    <span class="text msec">&nbsp97</span>
-                </div>
-            </div>
-        </div>
-        <div class="laps"></div>
+  <div class="container">
+    <h1>⏱️ Stopwatch</h1>
+    <div id="time">00:00:00</div>
+    <div class="buttons">
+      <button onclick="start()">Start</button>
+      <button onclick="pause()">Pause</button>
+      <button onclick="reset()">Reset</button>
+      <button onclick="recordLap()">Lap</button>
     </div>
-    
+    <ul id="laps"></ul>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
